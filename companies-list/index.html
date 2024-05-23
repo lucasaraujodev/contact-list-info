@@ -4,62 +4,1357 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Empresas</title>
+    <title>Lista de Empresas (v.1.0.0)</title>
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/bf71d6f50f.js" crossorigin="anonymous"></script>
+    <!-- css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- js link -->
+    <script src="./src/index.js" defer></script>
 </head>
 <body>
     <!-- header: title + types of services -->
     <header>
-        <h1>Lista de Empresas</h1>
+        <h1 class="text-center" style="width: 22rem;">Lista de Empresas</h1>
         <nav>
-            <div class="card" style="width: 18rem;">
-                <h2 class="card-header">
+            <div class="card" style="width: 22rem;">
+                <h2 class="card-header text-center">
                     Tipos de Serviços
                 </h2>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="#ar-condicionado">Ar-condicionado</a></li>
-                    <li class="list-group-item"><a href="#cacambas">Caçambas</a></li>
-                    <li class="list-group-item"><a href="#civil">Civil</a></li>
-                    <li class="list-group-item"><a href="#comunicacao-visual">Comunicação Visual</a></li>
-                    <li class="list-group-item"><a href="#cortinas-persianas">Cortinas/Persianas</a></li>
-                    <li class="list-group-item"><a href="#dedetizacao">Dedetização</a></li>
-                    <li class="list-group-item"><a href="#eletrica">Elétrica</a></li>
-                    <li class="list-group-item"><a href="#extintores">Extintores</a></li>
-                    <li class="list-group-item"><a href="#jardinagem">Jardinagem</a></li>
-                    <li class="list-group-item"><a href="#hidraulica">Hidráulica</a></li>
-                    <li class="list-group-item"><a href="#marcenaria">Marcenaria</a></li>
-                    <li class="list-group-item"><a href="#pintura">Pintura</a></li>
-                    <li class="list-group-item"><a href="#serralheria">Serralheria</a></li>
-                    <li class="list-group-item"><a href="#sonorizacao">Sonorização</a></li>
-                    <li class="list-group-item"><a href="#vidracaria">Vidraçaria</a></li>
+                    <li class="list-group-item text-center"><a href="#ar-condicionado">Ar-Condicionado</a></li>
+                    <li class="list-group-item text-center"><a href="#cacambas">Caçambas</a></li>
+                    <li class="list-group-item text-center"><a href="#civil">Civil</a></li>
+                    <li class="list-group-item text-center"><a href="#comunicacao-visual">Comunicação Visual</a></li>
+                    <li class="list-group-item text-center"><a href="#cortinas-persianas">Cortinas/Persianas</a></li>
+                    <li class="list-group-item text-center"><a href="#dedetizacao">Dedetização</a></li>
+                    <li class="list-group-item text-center"><a href="#eletrica">Elétrica</a></li>
+                    <li class="list-group-item text-center"><a href="#extintores">Extintores</a></li>
+                    <li class="list-group-item text-center"><a href="#hidraulica">Hidráulica</a></li>
+                    <li class="list-group-item text-center"><a href="#jardinagem">Jardinagem</a></li>
+                    <li class="list-group-item text-center"><a href="#marcenaria">Marcenaria</a></li>
+                    <li class="list-group-item text-center"><a href="#pintura">Pintura</a></li>
+                    <li class="list-group-item text-center"><a href="#serralheria">Serralheria</a></li>
+                    <li class="list-group-item text-center"><a href="#sonorizacao">Sonorização</a></li>
+                    <li class="list-group-item text-center"><a href="#vidracaria">Vidraçaria</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- main: sections by types of services + contact cards -->
     <main>
+        <!-- ar-condicionado section -->
         <section id="ar-condicionado">
-            <div class="card" style="width: 18rem;">   
-                <div class="card-header">
-                    Ar-condicionado
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Ar-Condicionado</h4>
                 </div>
-                <ul>
-                    <li><div class="card text-center mb-3" style="width: 18rem;">
+                    <div class="card text-center mb-3" style="width: 22rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Nome da Empresa</h5>
-                        <p class="card-text">CNPJ: XX.XXX.XXX/0001-XX</p>
-                        <a href="#" class="btn btn-primary">WhatsApp</a>
-                        <a href="#" class="btn btn-primary">E-mail</a>
+                        <h5 class="card-title">Refrigeral Climatizações</h5>
+                        <p class="card-text">CNPJ: <span >27.363.271/0001-68</span></p>                        
+                        <a href="https://wa.me/5581989267671" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:climatizacaorefrigeral@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
                         </div>
-                    </div></li>
-                </ul>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Refrigel Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >07.763.435/0001-37</span></p>                        
+                        <a href="https://wa.me/5581983222636" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:refrigelltda2010@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Ponto do Frio Climatização</h5>
+                        <p class="card-text">CNPJ: <span >28.266.968/0001-83</span></p>                        
+                        <a href="https://wa.me/5581993823661" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:pontodofrio0@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Aquino Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >10.632.383/0001-74</span></p>                        
+                        <a href="https://wa.me/5581985228722" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:aquinoarcondicionado@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Pernambuco Climatização</h5>
+                        <p class="card-text">CNPJ: <span >27.635.894/0001-42</span></p>                        
+                        <a href="https://wa.me/5581986830171" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:orcamento@pernambucoclimatizacao.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Júnior Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >22.005.459/0001-10</span></p>                        
+                        <a href="https://wa.me/5587996506056" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:refrigeracao.junior@bol.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Bom Clima Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >11.852.772/0001-78</span></p>                        
+                        <a href="https://wa.me/5581988097891" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:bom-clima@outlook.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Alpes Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >36.106.841/0001-25</span></p>                        
+                        <a href="https://wa.me/5587991069196" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:alpesrefrigeracaoealpinismo@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Mega Frio</h5>
+                        <p class="card-text">CNPJ: <span >08.470.414/0001-96</span></p>                        
+                        <a href="tel:8136310015" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:megafriope@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">JW Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >13.827.504/0001-21</span></p>                        
+                        <a href="https://wa.me/5581999148751" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:j.w.refrigeracao@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Izidoro Manutenção</h5>
+                        <p class="card-text">CNPJ: <span >31.732.750/0001-81</span></p>                        
+                        <a href="https://wa.me/5581996275162" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:izidoro.manutencao@outlook.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Helo Refrigeração</h5>
+                        <p class="card-text">CNPJ: <span >29.824.684/0001-28</span></p>                        
+                        <a href="https://wa.me/5581992198870" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:dejea420@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
             </div>
         </section>
+        <!-- caçambas section -->
+        <section id="cacambas">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Caçambas</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">SGC - São Gabriel</h5>
+                        <p class="card-text">CNPJ: <span >67.855.775/0001-10</span></p>                        
+                        <a href="https://wa.me/5581992970615" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:comercial@saogabrieltransportes.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">MCC Resíduos</h5>
+                        <p class="card-text">CNPJ: <span >30.076.470/0001-08</span></p>                        
+                        <a href="https://wa.me/5581941413382" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:mccresiduos@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Papa Metralha</h5>
+                        <p class="card-text">CNPJ: <span >12.762.763/0001-59</span></p>                        
+                        <a href="https://wa.me/5581996081540" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:papametralha@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+            </div>
+        </section>
+        <!-- civil section -->
+        <section id="civil">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Civil</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AH Serviços Técnicos em Engenharia</h5>
+                        <p class="card-text">CNPJ: <span >32.477.684/0001-03</span></p>                        
+                        <a href="https://wa.me/5581988642663" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:ahservicostecnico@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">J B da Cruz</h5>
+                        <p class="card-text">CNPJ: <span >21.122.915/0001-40</span></p>                        
+                        <a href="https://wa.me/558198854-3617" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:josenildobarrosdacruz@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Paula Distribuição</h5>
+                        <p class="card-text">CNPJ: <span >37.096.101/0001-18</span></p>                        
+                        <a href="https://wa.me/5581994844332" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:pcristina0779@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Kenard Silva da Rocha</h5>
+                        <p class="card-text">CNPJ: <span >12.082.329/0001-28</span></p>                        
+                        <a href="https://wa.me/5587988174700" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:kenardrocha1@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Hora Sete Construção</h5>
+                        <p class="card-text">CNPJ: <span >37.563.106/0001-03</span></p>                        
+                        <a href="https://wa.me/5581999229406" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:atendimento@hora7engenharia.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Construtora Estrela da Noite</h5>
+                        <p class="card-text">CNPJ: <span >25.330.950/0001-05</span></p>                        
+                        <a href="https://wa.me/5587996680923" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:soqueroservir@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">BCN Engenharia</h5>
+                        <p class="card-text">CNPJ: <span >05.455.119/0001-72</span></p>                        
+                        <a href="https://wa.me/5581992012106" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:aderitonunes@uol.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AC Alves Bezerra da Silva</h5>
+                        <p class="card-text">CNPJ: <span >28.734.563/0001-22</span></p>                        
+                        <a href="https://wa.me/5581998153992" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contatolbengenharia01@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">JAS Construtora</h5>
+                        <p class="card-text">CNPJ: <span >05.302.271/0001-15</span></p>                        
+                        <a href="https://wa.me/5581989324325" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:alconstrutora1234@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">LM de Arruda</h5>
+                        <p class="card-text">CNPJ: <span >05.383.374/0001-57</span></p>                        
+                        <a href="https://wa.me/5581984237136" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:lucielmaarruda61@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Radamés Engenharia</h5>
+                        <p class="card-text">CNPJ: <span >31.033.733/0001-56</span></p>                        
+                        <a href="https://wa.me/5581985326685" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:rada.eng@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Moura Reformas</h5>
+                        <p class="card-text">CNPJ: <span >45.500.830/0001-16</span></p>                        
+                        <a href="https://wa.me/5581998191514" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:mourareformac@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Moreira Construção Civil</h5>
+                        <p class="card-text">CNPJ: <span >15.586.610/0001-96</span></p>                        
+                        <a href="https://wa.me/5581982276850" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:moreiraengenharia777@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Amós Unividros</h5>
+                        <p class="card-text">CNPJ: <span >26.436.266/0001-75</span></p>                        
+                        <a href="https://wa.me/5581988594044" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:amosvende@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">CESCOM Construtora</h5>
+                        <p class="card-text">CNPJ: <span >19.827.651/0001-88</span></p>                        
+                        <a href="https://wa.me/5581998628904" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:cescon2014@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">EMV Construtora LTDA</h5>
+                        <p class="card-text">CNPJ: <span >27.329.760/0001-01</span></p>                        
+                        <a href="https://wa.me/5583988608778" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:adm.emv.engenharia@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+            </div>
+        </section>
+        <!-- comunicacao-visual section -->
+        <section id="comunicacao-visual">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Comunicação Visual</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Suamygraf Soluções Gráficas</h5>
+                        <p class="card-text">CNPJ: <span >15.308.514/0001-86</span></p>                        
+                        <a href="https://wa.me/5581988803676" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:suamygraf2014@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Fidelis Comunicação Visual</h5>
+                        <p class="card-text">CNPJ: <span >32.237.433/0001-51</span></p>                        
+                        <a href="https://wa.me/5581996923338" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:fideliscv@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>   
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">DV Placas</h5>
+                        <p class="card-text">CNPJ: <span >12.486.712/0001-41</span></p>                        
+                        <a href="https://wa.me/5581986321006" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:impressoseplacas@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Jabok Gráfica</h5>
+                        <p class="card-text">CNPJ: <span >26.116.751/0001-61</span></p>                        
+                        <a href="https://wa.me/5581984216952" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:jabokgrafica@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">MS Comuicação Visual</h5>
+                        <p class="card-text">CNPJ: <span >33.385.736/0001-84</span></p>                        
+                        <a href="https://wa.me/5581999883137" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:marciaoliveira1891@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Arts Mundo</h5>
+                        <p class="card-text">CNPJ: <span >15.467.585/0001-21</span></p>                        
+                        <a href="https://wa.me/5581985681469" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:nadoletrista@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+            </div>
+        </section>
+        <!-- cortinas-persianas section -->
+        <section id="cortinas-persianas">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Cortinas/Persianas</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Olinda Cortinas</h5>
+                        <p class="card-text">CNPJ: <span >69.941.052/0001-69</span></p>                        
+                        <a href="https://wa.me/5581995899171" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contato@olindacortinas.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Realce Decor Persianas e Cortinas</h5>
+                        <p class="card-text">CNPJ: <span >14.926.722/0001-86</span></p>                        
+                        <a href="https://wa.me/5581988404941" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:realcedecorcortinasepersianas@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Central das Persianas</h5>
+                        <p class="card-text">CNPJ: <span >11.360.869/0001-63</span></p>                        
+                        <a href="https://wa.me/5581995514700" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contato@centraldaspersianas.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">JC Persianas</h5>
+                        <p class="card-text">CNPJ: <span >46.427.677/0001-01</span></p>                        
+                        <a href="https://wa.me/5581997697963" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:recifeprojetus@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Cenprel Revestimentos</h5>
+                        <p class="card-text">CNPJ: <span >40.870.263/0001-76</span></p>                        
+                        <a href="https://wa.me/5581981329219" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contato@cenprelrevestimentos.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Cada Canto Decor</h5>
+                        <p class="card-text">CNPJ: <span >24.541.752/0001-28</span></p>                        
+                        <a href="tel:8137714181" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contato@cadacantodecor.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+            </div>
+        </section>
+        <!-- dedetizacao section -->
+        <section id="dedetizacao">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Dedetização</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Focus Dedetização</h5>
+                        <p class="card-text">CNPJ: <span >09.595.245/0001-83</span></p>                        
+                        <a href="https://wa.me/5581996380510" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:douglas.santos@focusservicos.eco.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Instante Saúde Dedetização</h5>
+                        <p class="card-text">CNPJ: <span >27.130.815/0001-41</span></p>                        
+                        <a href="https://wa.me/5581987594155" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contato@instantesaude.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Unicontrol</h5>
+                        <p class="card-text">CNPJ: <span >11.486.771/0001-57</span></p>                        
+                        <a href="https://wa.me/5581981410481" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:marcelo.costa@unicontrol.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Zap Cupim</h5>
+                        <p class="card-text">CNPJ: <span >28.857.701/0001-60</span></p>                        
+                        <a href="https://wa.me/5581981337715" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:zapcupim@zapcupim.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">SOS Dedetizações</h5>
+                        <p class="card-text">CNPJ: <span >09.149.317/0001-69</span></p>                        
+                        <a href="tel:8134325359" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:administrativo@soscontroledepragas.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Igarassu Dedetização</h5>
+                        <p class="card-text">CNPJ: <span >10.730.108/0001-93</span></p>                        
+                        <a href="https://wa.me/5581987611319" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:igarassu.dedetizacao@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Desinsetizadora Vitória</h5>
+                        <p class="card-text">CNPJ: <span >23.651.677/0001-95</span></p>                        
+                        <a href="https://wa.me/5581999365610" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:sacvitoria@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Dedetizadora JCB</h5>
+                        <p class="card-text">CNPJ: <span >12.105.555/0001-87</span></p>                        
+                        <a href="https://wa.me/5581991586491" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:jcbdetetizadora@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">TOP Limp Serviços</h5>
+                        <p class="card-text">CNPJ: <span >15.471.241/0001-96</span></p>                        
+                        <a href="tel:8130638386" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:vandas1@toplimppe.com.br " target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+            </div>
+        </section>
+        <!-- eletrica section -->
+        <section id="eletrica">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Elétrica</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Techsun Serviços</h5>
+                        <p class="card-text">CNPJ: <span >09.720.837/0001-80</span></p>                        
+                        <a href="https://wa.me/5581996795481" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:vadson@techsunservicos.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AH Serviços Técnicos em Engenharia</h5>
+                        <p class="card-text">CNPJ: <span >32.477.684/0001-03</span></p>                        
+                        <a href="https://wa.me/5581988642663" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:ahservicostecnico@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">J B da Cruz</h5>
+                        <p class="card-text">CNPJ: <span >21.122.915/0001-40</span></p>                        
+                        <a href="https://wa.me/558198854-3617" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:josenildobarrosdacruz@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Engelétrica Serviços de Engenahria LTDA</h5>
+                        <p class="card-text">CNPJ: <span >19.502.623/0001-90</span></p>                        
+                        <a href="https://wa.me/5583998312562" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:leopoldo.engeletrica@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">CESCOM Construtora</h5>
+                        <p class="card-text">CNPJ: <span >19.827.651/0001-88</span></p>                        
+                        <a href="https://wa.me/5581998628904" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:cescon2014@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Power Serviços</h5>
+                        <p class="card-text">CNPJ: <span >16.731.874/0001-59</span></p>                        
+                        <a href="https://wa.me/5581991818921" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contato@powerautomacao.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">EMV Construtora LTDA</h5>
+                        <p class="card-text">CNPJ: <span >27.329.760/0001-01</span></p>                        
+                        <a href="https://wa.me/5583988608778" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:adm.emv.engenharia@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AC Alves Bezerra da Silva</h5>
+                        <p class="card-text">CNPJ: <span >28.734.563/0001-22</span></p>                        
+                        <a href="https://wa.me/5581998153992" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contatolbengenharia01@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+            </div>
+        </section>
+        <!-- extintores section -->
+        <section id="extintores">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Extintores</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Brasfogo (Olinda Extintores)</h5>
+                        <p class="card-text">CNPJ: <span >14.591.522/0001-10</span></p>                        
+                        <a href="https://wa.me/5581934316621" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:olindaextintores@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">PRL Extintores</h5>
+                        <p class="card-text">CNPJ: <span >14.215.199/0001-80</span></p>                        
+                        <a href="https://wa.me/5587996696149" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:araujoalbuquerque@bol.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Pontual Serviços</h5>
+                        <p class="card-text">CNPJ: <span >33.660.843/0001-73</span></p>                        
+                        <a href="https://wa.me/5581991072003" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:vendas@pontualservi.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">J.A. Extintores</h5>
+                        <p class="card-text">CNPJ: <span >27.953.564/0001-03</span></p>                        
+                        <a href="tel:8738314729" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:ja.extintoresst@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Ekipe Tecnologia em Segurança e Incêndio LTDA</h5>
+                        <p class="card-text">CNPJ: <span >05.974.275/0001-40</span></p>                        
+                        <a href="https://wa.me/5581995040422" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:comercial@exbras.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Amorim Extintores</h5>
+                        <p class="card-text">CNPJ: <span >10.421.610/0001-12</span></p>                        
+                        <a href="tel:8738630753" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:amorimextintores@yahoo.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+            </div>
+        </section>
+        <!-- hidraulica section -->
+        <section id="hidraulica">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Hidráulica</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AH Serviços Técnicos em Engenharia</h5>
+                        <p class="card-text">CNPJ: <span >32.477.684/0001-03</span></p>                        
+                        <a href="https://wa.me/5581988642663" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:ahservicostecnico@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">J B da Cruz</h5>
+                        <p class="card-text">CNPJ: <span >21.122.915/0001-40</span></p>                        
+                        <a href="https://wa.me/5581988543617" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:josenildobarrosdacruz@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AC Alves Bezerra da Silva</h5>
+                        <p class="card-text">CNPJ: <span >28.734.563/0001-22</span></p>                        
+                        <a href="https://wa.me/5581998153992" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contatolbengenharia01@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+            </div>
+        </section>
+        <!-- jardinagem section -->
+        <section id="jardinagem">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Jardinagem</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Carlos Jardinagem LTDA</h5>
+                        <p class="card-text">CNPJ: <span >18.144.315/0001-78</span></p>                        
+                        <a href="https://wa.me/5581999846964" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:carlosandrejardinagem@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Ecojardinagem Serviços LTDA</h5>
+                        <p class="card-text">CNPJ: <span >25.449.085/0001-10</span></p>                        
+                        <a href="https://wa.me/558199404508" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:comercial@ecojardinagem.com.br" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Garth e Flora</h5>
+                        <p class="card-text">CNPJ: <span >24.480.034/0001-99</span></p>                        
+                        <a href="https://wa.me/5581996607649" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:gartheflora@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">P.H Jardinagem e Paisagismo</h5>
+                        <p class="card-text">CNPJ: <span >40.280.746/0001-10</span></p>                        
+                        <a href="https://wa.me/5581994340801" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:p.hpaisagismoejardinagem@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Bruno Castro Paisagismo</h5>
+                        <p class="card-text">CNPJ: <span >31.733.903/0001-05</span></p>                        
+                        <a href="https://wa.me/5581986764610" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:brunocastropaisagismo@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Luciano Lima dos Santos</h5>
+                        <p class="card-text">CNPJ: <span >41.343.614/0001-53</span></p>                        
+                        <a href="https://wa.me/5581996738904" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:lulimasantos15@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+            </div>
+        </section>
+        <!-- marcenaria section -->
+        <section id="marcenaria">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Marcenaria</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Marcenaria Calado</h5>
+                        <p class="card-text">CNPJ: <span >25.050.371/0001-09</span></p>                        
+                        <a href="https://wa.me/5581987475713" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">José Lúcio Reparação</h5>
+                        <p class="card-text">CNPJ: <span >26.593.374/0001-51</span></p>                        
+                        <a href="https://wa.me/5581986962979" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:joseluciopf@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Renã de Souza Silva</h5>
+                        <p class="card-text">CNPJ: <span >37.446.680/0001-81</span></p>                        
+                        <a href="https://wa.me/5581998490590" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:renaenatacha@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Dedé Móveis</h5>
+                        <p class="card-text">CNPJ: <span >03.944.218/0001-92</span></p>                        
+                        <a href="https://wa.me/5581999148739" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:dedemoveis1204@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Luan Móveis</h5>
+                        <p class="card-text">CNPJ: <span >31.794.897/0001-04</span></p>                        
+                        <a href="https://wa.me/5581994361385" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:alambergue@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+            </div>
+        </section>
+        <!-- pintura section -->
+        <section id="pintura">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Pintura</h4>
+                </div>
+                <div class="card text-center mb-3" style="width: 22rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">AH Serviços Técnicos em Engenharia</h5>
+                        <p class="card-text">CNPJ: <span >32.477.684/0001-03</span></p>                        
+                        <a href="https://wa.me/5581988642663" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:ahservicostecnico@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">J B da Cruz</h5>
+                        <p class="card-text">CNPJ: <span >21.122.915/0001-40</span></p>                        
+                        <a href="https://wa.me/5581988543617" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:josenildobarrosdacruz@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Vanderlei Pintura</h5>
+                        <p class="card-text">CNPJ: <span >29.787.795/0001-01</span></p>                        
+                        <a href="https://wa.me/5581983078893" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:vanderleiaraujo018@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">MJ Pintura</h5>
+                        <p class="card-text">CNPJ: <span >34.879.133/0001-00</span></p>                        
+                        <a href="https://wa.me/5581998462794" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:mjpinturape@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">HD Pintura</h5>
+                        <p class="card-text">CNPJ: <span >04.987.237/0001-12</span></p>                        
+                        <a href="https://wa.me/5587996063228" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:vanderleiaraujo018@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AC Alves Bezerra da Silva</h5>
+                        <p class="card-text">CNPJ: <span >28.734.563/0001-22</span></p>                        
+                        <a href="https://wa.me/5581998153992" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contatolbengenharia01@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+            </div>
+        </section>
+        <!-- serralheria section -->
+        <section id="serralheria">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Serralheria</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">JK Calderaria</h5>
+                        <p class="card-text">CNPJ: <span >26.980.121/0001-30</span></p>                        
+                        <a href="https://wa.me/5581986922455" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:gerenciajkcaldeiraria@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Paula Distribuição</h5>
+                        <p class="card-text">CNPJ: <span >37.096.101/0001-18</span></p>                        
+                        <a href="https://wa.me/5581994844332" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:pcristina0779@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">AC Alves Bezerra da Silva</h5>
+                        <p class="card-text">CNPJ: <span >28.734.563/0001-22</span></p>                        
+                        <a href="https://wa.me/5581998153992" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:contatolbengenharia01@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Serralheria Liberal</h5>
+                        <p class="card-text">CNPJ: <span >11.384.022/0001-19</span></p>                        
+                        <a href="https://wa.me/5587996277814" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:eliza.vava@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>
+            </div>
+        </section>
+        <!-- sonorizacao section -->
+        <section id="sonorizacao">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Sonorização</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Contec</h5>
+                        <p class="card-text">CNPJ: <span >12.500.981/0001-15</span></p>                        
+                        <a href="https://wa.me/5581987388758" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:tlm69714@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">S.POWERTECH</h5>
+                        <p class="card-text">CNPJ: <span >48.492.536/0001-06</span></p>                        
+                        <a href="https://wa.me/5581996804965" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:s.powertech@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">CPTEC</h5>
+                        <p class="card-text">CNPJ: <span >36.264.956/0001-48</span></p>                        
+                        <a href="tel:8134222038" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="tel:8134222038" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Master Digital</h5>
+                        <p class="card-text">CNPJ: <span >22.539.218/0001-51</span></p>                        
+                        <a href="https://wa.me/5581988669552" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:ricardoci2@hotmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+            </div>
+        </section>
+        <!-- vidracaria section -->
+        <section id="vidracaria">
+            <div class="card" style="width: 22rem;">   
+                <div class="card-header text-center">
+                    <h4>Vidraçaria</h4>
+                </div>
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Leart Vidraçaria</h5>
+                        <p class="card-text">CNPJ: <span >16.998.549/0001-57</span></p>                        
+                        <a href="https://wa.me/5581992739099" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:leart.robert@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">J B da Cruz</h5>
+                        <p class="card-text">CNPJ: <span >21.122.915/0001-40</span></p>                        
+                        <a href="https://wa.me/5581988543617" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:josenildobarrosdacruz@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">VMS Serviços</h5>
+                        <p class="card-text">CNPJ: <span >43.408.496/0001-40</span></p>                        
+                        <a href="https://wa.me/5581988726612" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:vicentemar36@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Hidravidros Caxangá</h5>
+                        <p class="card-text">CNPJ: <span >28.852.652/0001-73</span></p>                        
+                        <a href="https://wa.me/5581985645424" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:mgengenharianordeste@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div> 
+                    <div class="card text-center mb-3" style="width: 22rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Amós Unividros</h5>
+                        <p class="card-text">CNPJ: <span >26.436.266/0001-75</span></p>                        
+                        <a href="https://wa.me/5581988594044" target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <a href="mailto:amosvende@gmail.com" target="_blank" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                        <!-- <button type="button" class="btn btn-outline-primary"><i class="fa-regular fa-clipboard"></i></button> -->
+                        <!-- <a href="#">Voltar ao topo</a> -->
+                        </div>
+                        <a href="#">Voltar ao topo</a>
+                    </div>  
+            </div>
+        </section>
+        
     </main>
     <!-- footer -->
     <footer></footer>
