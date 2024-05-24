@@ -1,1 +1,8 @@
+---PE---
+version 1.0.0: basic version with wpp and email buttons links.
+
+---PB---
+version 1.0.0: basic version with wpp and email buttons links.
+
+---RN---
 version 1.0.0: basic version with wpp and email buttons links.
